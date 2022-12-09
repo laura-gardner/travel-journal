@@ -1,13 +1,76 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --bg-contrast: #F55A5A;
+  --text: #2B283A;
+  --text-contrast: #918E9B;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html {
+  font-family: 'Inter', sans-serif;
+  color: var(--text);
+}
+
+a {
+  color: var(--text-contrast);
+  font-size: 12px;
+}
+
+nav {
+  background-color: var(--bg-contrast);
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav > img {
+  width: 24px;
+  margin-right: 8px;
+}
+
+h1 {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: -0.06rem;
+}
+
+.entry {
+  display: flex;
+}
+
+.entry--location {
+  display: flex;
+  align-items: center;
+}
+
+.entry--location > span {
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-right: 10px;
+  letter-spacing: 0.15rem;
+}
+
+.pin-icon {
+  height: 10px;
+  margin-right: 5px;
+}
+
+.entry--img > img {
+  width: 126px; 
+}
+
+.entry--place {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.entry--dates {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.entry--description {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 150%;
 }
