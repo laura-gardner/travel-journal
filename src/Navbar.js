@@ -1,7 +1,7 @@
 const Navbar = () => {
     return (
         <nav>
-            <img src="./globe.png"/>
+            <img src="./globe.png" alt=""/>
             <h1>my travel journal.</h1>
         </nav>
     )
